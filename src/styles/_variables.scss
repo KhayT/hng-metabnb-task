@@ -3,3 +3,16 @@ $text-black: #434343;
 $text-purple: #a02279;
 
 $purple-gradient: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+$white-gradient: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+
+@mixin text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin font($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}

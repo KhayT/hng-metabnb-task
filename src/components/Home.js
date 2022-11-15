@@ -40,13 +40,15 @@ const Home = () => {
 
       <section className="nfts">
         <div className="nfts-text">
-          <h4>Metabnb NFTs</h4>
-          <p>
+          <h4 className="nfts-text_title">Metabnb NFTs</h4>
+          <p className="nfts-text_subtitle">
             Discover our NFT gift cards collection. Loyal customers gets amazing
             gift cards which are traded as NFTs. These NFTs gives our cutomer
             access to loads of our exclusive services.
           </p>
-          <p>Learn More</p>
+          <div className="learnMore-container">
+            <p className="nfts-text_learnMore">Learn More</p>
+          </div>
         </div>
 
         <img src={nfts} alt="nfts" className="nfts-img" />

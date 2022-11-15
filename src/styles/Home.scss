@@ -4,31 +4,25 @@
   display: flex;
   width: 90%;
   margin: 6rem auto;
-
   align-items: center;
 }
 
 .hero-text {
   &_title {
-    color: $text-black;
-    font-size: 56px;
-    line-height: 78px;
+    @include font(400, 56px, 78px);
     letter-spacing: -0.02em;
-    font-weight: 400;
+    color: $text-black;
 
     span {
       color: $text-purple;
-      font-weight: 400;
     }
   }
 
   &_subtitle {
-    font-size: 24px;
-    line-height: 35px;
+    @include font(400, 24px, 35px);
     color: $text-black;
     margin-top: 48px;
     margin-bottom: 48px;
-    font-weight: 400;
   }
 }
 
@@ -46,4 +40,47 @@
 
 .nfts {
   background: $purple-gradient;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 65px 5%;
+
+  &-text {
+    width: 40%;
+    padding: 40px 0;
+
+    &_title {
+      @include font(700, 48px, 60px);
+      background: $white-gradient;
+      @include text;
+    }
+
+    &_subtitle {
+      @include font(400, 18px, 35px);
+      margin-top: 35px;
+      margin-bottom: 50px;
+      background: $white-gradient;
+      @include text;
+    }
+
+    .learnMore-container {
+      background: $white-gradient;
+      border-radius: 8px;
+      padding: 14px 33px;
+      width: fit-content;
+    }
+
+    &_learnMore {
+      @include font(400, 16px, 19px);
+      text-align: center;
+      background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+      @include text;
+    }
+  }
+
+  &-img {
+    width: 60%;
+    padding: 0 5%;
+  }
 }
