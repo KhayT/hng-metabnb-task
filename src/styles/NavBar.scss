@@ -1,0 +1,37 @@
+@import "./variables";
+
+.nav {
+  display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  //   margin: 43px 100px;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  width: 90%;
+  margin: auto;
+  //   padding: 15px 5%;
+  z-index: 10;
+  gap: 1rem;
+  //   max-height: 48px;
+  border: 1px solid red;
+  margin-top: 2rem;
+
+  &-logo {
+    height: 36.67px;
+  }
+
+  &-links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 48px;
+
+    a {
+      text-decoration: none;
+      color: $text-black;
+    }
+  }
+}
