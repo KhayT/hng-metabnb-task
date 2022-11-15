@@ -4,6 +4,7 @@ import "../styles/Home.scss";
 import metamask from "../images/Metamask.svg";
 import opeansea from "../images/Opensea.svg";
 import mbtoken from "../images/MBToken.svg";
+import nfts from "../images/Nfts.png";
 
 const Home = () => {
   return (
@@ -27,16 +28,28 @@ const Home = () => {
 
         <img src={heroImg} alt="hero" className="hero-img" />
       </section>
-
       <section className="brands">
         <img src={mbtoken} alt="mb token" />
         <img src={metamask} alt="metamask" />
         <img src={opeansea} alt="opensea" />
       </section>
-
       <section className="inspiration">
         <h4>Inspiration for your next adventure</h4>
         <div className="inspiration-container"></div>
+      </section>
+
+      <section className="nfts">
+        <div className="nfts-text">
+          <h4>Metabnb NFTs</h4>
+          <p>
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our cutomer
+            access to loads of our exclusive services.
+          </p>
+          <p>Learn More</p>
+        </div>
+
+        <img src={nfts} alt="nfts" className="nfts-img" />
       </section>
     </>
   );

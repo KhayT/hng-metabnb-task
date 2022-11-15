@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import "./App.scss";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <MainPage />
         </Route>
       </Switch>
+      <Footer />
     </>
   );
 };
