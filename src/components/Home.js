@@ -5,6 +5,8 @@ import metamask from "../images/Metamask.svg";
 import opeansea from "../images/Opensea.svg";
 import mbtoken from "../images/MBToken.svg";
 import nfts from "../images/Nfts.png";
+import Inspiration from "./Inspiration";
+import { inspirations } from "./InspirationData";
 
 const Home = () => {
   return (
@@ -35,7 +37,9 @@ const Home = () => {
       </section>
       <section className="inspiration">
         <h4>Inspiration for your next adventure</h4>
-        <div className="inspiration-container"></div>
+        <div className="inspiration-container">
+          {/* <Inspiration project={}/> */}
+        </div>
       </section>
 
       <section className="nfts">
