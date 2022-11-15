@@ -13,13 +13,13 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="./">Place to stay</Link>
+          <Link to="/place-to-stay">Place to stay</Link>
         </li>
         <li>
-          <Link to="./">NFTs</Link>
+          <Link to="/">NFTs</Link>
         </li>
         <li>
-          <Link to="./">Community</Link>
+          <Link to="/">Community</Link>
         </li>
       </ul>
       <button>Connect Wallet</button>

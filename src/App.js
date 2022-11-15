@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import "./App.scss";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import PlacesPage from "./pages/PlacesPage";
 
 const App = () => {
   return (
@@ -12,6 +13,9 @@ const App = () => {
       <Switch>
         <Route path="/" exact>
           <MainPage />
+        </Route>
+        <Route path="/place-to-stay">
+          <PlacesPage />
         </Route>
       </Switch>
       <Footer />
