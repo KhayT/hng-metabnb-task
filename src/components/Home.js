@@ -22,8 +22,8 @@ const Home = () => {
             metaverse, get a chance to turn your imagination to reality at your
             comfort zone
           </p>
-          <form className="hero-text_form">
-            <input type=" " />
+          <form className="hero-text_form" onSubmit={(e) => e.preventDefault()}>
+            <input type="text" placeholder="Search for location" />
             <button>Search</button>
           </form>
         </div>
@@ -36,9 +36,9 @@ const Home = () => {
         <img src={metamask} alt="metamask" />
         <img src={opeansea} alt="opensea" />
       </section>
-      <section className="inspiration">
+      <section className="inspirations">
         <h4>Inspiration for your next adventure</h4>
-        <div className="inspiration-container">
+        <div className="inspirations-container">
           {inspirations
             .filter((inspiration) => inspiration.id % 2 === 0)
             .map((insp) => {
