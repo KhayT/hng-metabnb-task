@@ -33,48 +33,48 @@ const Footer = () => {
       <ul>
         <h3>Community</h3>
         <li>
-          <Link to="/">NFTs</Link>
+          <Link to="">NFTs</Link>
         </li>
         <li>
-          <Link to="/">Tokens</Link>
+          <Link to="">Tokens</Link>
         </li>
         <li>
-          <Link to="/">Landlords</Link>
+          <Link to="">Landlords</Link>
         </li>
         <li>
-          <Link to="/">Discord</Link>
+          <Link to="">Discord</Link>
         </li>
       </ul>
 
       <ul>
         <h3>Places</h3>
         <li>
-          <Link to="/places">Castle</Link>
+          <Link to="">Castle</Link>
         </li>
         <li>
-          <Link to="/places">Farms</Link>
+          <Link to="">Farms</Link>
         </li>
         <li>
-          <Link to="/places">Beach</Link>
+          <Link to="">Beach</Link>
         </li>
         <li>
-          <Link to="/places">Learn More</Link>
+          <Link to="">Learn More</Link>
         </li>
       </ul>
 
       <ul>
         <h3>About us</h3>
         <li>
-          <Link to="/">Roadmap</Link>
+          <Link to="">Roadmap</Link>
         </li>
         <li>
-          <Link to="/">Creators</Link>
+          <Link to="">Creators</Link>
         </li>
         <li>
-          <Link to="/">Career</Link>
+          <Link to="">Career</Link>
         </li>
         <li>
-          <Link to="/">Contact us</Link>
+          <Link to="">Contact us</Link>
         </li>
       </ul>
 
