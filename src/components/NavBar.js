@@ -34,7 +34,9 @@ const NavBar = () => {
             <Link to="/">Community</Link>
           </li>
         </ul>
-        <button onClick={connectWallteHandler}>Connect Wallet</button>
+        <button onClick={connectWallteHandler} className="nav-btn">
+          Connect Wallet
+        </button>
       </nav>
 
       {openModal ? <Modal closeModal={closeModalHandler} /> : ""}

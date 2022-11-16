@@ -2,20 +2,12 @@
 
 .nav {
   display: flex;
-  //   justify-content: space-between;
   align-items: center;
-  //   margin: 43px 100px;
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
   width: 90%;
   margin: auto;
-  //   padding: 15px 5%;
   z-index: 10;
   gap: 1rem;
-  //   max-height: 48px;
-  border: 1px solid red;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   &-logo {
     height: 36.67px;
@@ -32,6 +24,17 @@
     a {
       text-decoration: none;
       color: $text-black;
+      @include font(400, 20px, 25px);
     }
+  }
+
+  &-btn {
+    background: $purple-gradient;
+    border-radius: 10px;
+    padding: 15px 26px;
+    @include font(400, 16px, 24px);
+    color: #fff;
+    border: none;
+    outline: 0;
   }
 }
