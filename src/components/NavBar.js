@@ -18,24 +18,21 @@ const NavBar = () => {
   };
 
   const openMenuHandler = () => {
-    if (document.getElementById("link-container")) {
-      document.getElementById("link-container").style.transform =
-        "translateX(0)";
-      console.log(window.innerWidth);
-    }
+    setOpenMenu(true);
   };
 
   const closeMenuHandler = () => {
-    if (document.getElementById("link-container")) {
-      document.getElementById("link-container").style.display = "none";
-    }
+    setOpenMenu(false);
   };
 
   return (
     <>
       <nav className="nav">
         <img src={logo} alt="logo" />
-        <div className="link-container" id="link-container">
+        <div
+          className={`link-container ${openMenu ? "active" : ""}`}
+          id="link-container"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-x btn-close"
