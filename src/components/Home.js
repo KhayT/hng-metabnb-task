@@ -30,6 +30,7 @@ const Home = () => {
 
         <img src={heroImg} alt="hero" className="hero-img" />
       </section>
+
       <section className="brands">
         <img src={mbtoken} alt="mb token" />
         <img src={metamask} alt="metamask" />
@@ -38,7 +39,11 @@ const Home = () => {
       <section className="inspiration">
         <h4>Inspiration for your next adventure</h4>
         <div className="inspiration-container">
-          {/* <Inspiration project={}/> */}
+          {inspirations
+            .filter((inspiration) => inspiration.id % 2 === 0)
+            .map((insp) => {
+              return <Inspiration inspiration={insp} key={insp.id} />;
+            })}
         </div>
       </section>
 
