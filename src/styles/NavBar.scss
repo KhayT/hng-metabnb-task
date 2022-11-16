@@ -20,6 +20,7 @@
     justify-content: center;
     list-style-type: none;
     gap: 48px;
+    white-space: nowrap;
 
     a {
       text-decoration: none;
@@ -36,5 +37,7 @@
     color: #fff;
     border: none;
     outline: 0;
+    font-family: inherit;
+    white-space: nowrap;
   }
 }
